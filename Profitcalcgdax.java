@@ -10,6 +10,17 @@ import java.io.FileNotFoundException;
 
 public class Profitcalcgdax
 {
+  
+  public class Trade{
+    int name;
+    int type;
+    double priceUSD;
+    double amount;
+    String date;
+    
+  }
+  
+  
   public static void main(String[] args)
   {
     
