@@ -36,11 +36,6 @@ public class Profitcalcgdax
    
    File tradedata = new File("tradedata.txt");
    
-   Int[] trade_Coin = new Int[4];
-   trade_Coin[0] = 0;
-   trade_Coin[1] = 1;
-   trade_Coin[2] = 2;
-   trade_coin[3] = 3;
    
    String[] coin_Names = new String[4];
    coin_Names[0] = "0";
@@ -51,16 +46,14 @@ public class Profitcalcgdax
    ArrayList<Double> buy_Trade = new ArrayList<Double>();
    ArrayList<Double> sell_Trade = new ArrayList<Double>();
    
-   
-   int tcNumber = 0
-   System.out.println("Please enter the number for which coin you traded")
+   //Asking user what coin was traded
+   System.out.println("Please enter the number for which coin you traded");
    System.out.println(" 1. Btc (Bitcoin)");
    System.out.println(" 2. Eth (Ethereum)");
    System.out.println(" 3. Ltc (Litecoin)");
    int tcNumber = in.nextInt();
    
-   
-   
+   //requiring certain inputs from user
    if (tcNumber < 0)
    {
      System.out.println("Please enter a number between 1-3");
@@ -71,7 +64,7 @@ public class Profitcalcgdax
    }
    if (tcNumber > 3)
    {
-     System.out.println("Please enter a number between 1-3")
+     System.out.println("Please enter a number between 1-3");
      System.out.println(" 1. Btc (Bitcoin)");
      System.out.println(" 2. Eth (Ethereum)");
      System.out.println(" 3. Ltc (Litecoin)");

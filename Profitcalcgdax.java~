@@ -10,6 +10,25 @@ import java.io.FileNotFoundException;
 
 public class Profitcalcgdax
 {
+    public class Trade{
+    int name;        // Will map to coin_names
+    int type;        // Specifies buy or sell trade
+    double priceUSD; // Total cost of trade
+    double amount;   // How many coins
+    String date;     // Date the trade happened
+    
+    // Default constructor
+    public Trade() {
+      name = 0;
+      type = 0;
+      priceUSD = 0;
+      amount = 0;
+      date = "";
+    }
+    
+  }
+  
+  
   public static void main(String[] args)
   {
     
