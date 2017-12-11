@@ -10,6 +10,26 @@ import java.io.FileNotFoundException;
 
 public class Profitcalcgdax
 {
+  
+  public class Trade{
+    int name;        // Will map to coin_names
+    int type;        // Specifies buy or sell trade
+    double priceUSD; // Total cost of trade
+    double amount;   // How many coins
+    String date;     // Date the trade happened
+    
+    // Default constructor
+    public Trade() {
+      name = 0;
+      type = 0;
+      priceUSD = 0;
+      amount = 0;
+      date = "";
+    }
+    
+  }
+  
+  
   public static void main(String[] args)
   {
     
@@ -33,36 +53,7 @@ public class Profitcalcgdax
    ArrayList<Double> sell_Trade = new ArrayList<Double>();
    
    
-   int tcNumber = 0
-   System.out.println("Please enter the number for which coin you traded")
-   System.out.println(" 1. Btc (Bitcoin)");
-   System.out.println(" 2. Eth (Ethereum)");
-   System.out.println(" 3. Ltc (Litecoin)");
-   int tcNumber = in.nextInt();
    
-   
-   
-   if (tcNumber < 0)
-   {
-     System.out.println("Please enter a number between 1-3");
-     System.out.println(" 1. Btc (Bitcoin)");
-     System.out.println(" 2. Eth (Ethereum)");
-     System.out.println(" 3. Ltc (Litecoin)");
-     tcNumber = in.nextInt();
-   }
-   if (tcNumber > 3)
-   {
-     System.out.println("Please enter a number between 1-3")
-     System.out.println(" 1. Btc (Bitcoin)");
-     System.out.println(" 2. Eth (Ethereum)");
-     System.out.println(" 3. Ltc (Litecoin)");
-     tcNumber = in.nextInt();
-   }
-   
-     
-                        
-   
-             
    
    
   }
